@@ -13,6 +13,3 @@ class Student < Person
     '"¯\(ツ)/¯"'
   end
 end
-
-s1 = Student.new('2', 18, 'h', true)
-puts s1.play_hooky
