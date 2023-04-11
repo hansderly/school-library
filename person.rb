@@ -16,8 +16,6 @@ class Person
   private
 
   def of_age?
-    return false if @age <= 18
-
-    true
+    @age >= 18
   end
 end
