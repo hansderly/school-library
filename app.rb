@@ -5,7 +5,7 @@ require_relative './rental'
 
 class App
   def initialize
-    @book_list = []
+    @books_list = []
     @people_list = []
     @rentals_list = []
   end
