@@ -64,4 +64,23 @@ class App
     puts 'Teacher created successfully'
     puts "\n"
   end
+
+  def create_student
+    puts "\n"
+    puts 'Please provide these information :'
+    print 'Classroom (number) : '
+    classroom = gets.chomp
+    print 'Age : '
+    age = gets.chomp
+    print 'Name : '
+    name = gets.chomp
+    print 'Has parent permission? [Y/N] : '
+    parent_permission = gets.chomp
+    permission = true
+    permission = false if parent_permission.upcase == 'N'
+    new_student = Student.new(age, classroom, name, parent_permission: permission)
+    @people_list << new_student
+    puts 'Student created successfully'
+    puts "\n"
+  end
 end
