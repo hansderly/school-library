@@ -14,7 +14,5 @@ class Student < Person
     classroom.push(self) unless @students.include?(self)
   end
 
-  def play_hooky
-    '"¯\(ツ)/¯"'
-  end
+  def play_hooky; end
 end
