@@ -127,4 +127,13 @@ class App
     end
     puts "\n"
   end
+
+  def actions_management(choice)
+    action_to_perform = ACTIONS[choice]
+    if action_to_perform.nil?
+      puts "\nYour choice is incorrect. Must between 1-7. Please retry...\n\n"
+    else
+      send(action_to_perform)
+    end
+  end
 end
