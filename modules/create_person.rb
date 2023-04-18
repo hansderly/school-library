@@ -1,11 +1,13 @@
 module CreatePerson
-  puts "\n"
-  print 'Do you want to create a Student (1) or a Teacher (2) [Input the number]: '
-  choice = gets.chomp
-  if choice == '1'
-    create_student
-  else
-    create_teacher
+  def create_person
+    puts "\n"
+    print 'Do you want to create a Student (1) or a Teacher (2) [Input the number]: '
+    choice = gets.chomp
+    if choice == '1'
+      create_student
+    else
+      create_teacher
+    end
   end
 
   def create_teacher
