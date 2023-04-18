@@ -3,9 +3,6 @@ require './modules/menu'
 
 class Selection < App
   include Menu
-  def initialize
-    super()
-  end
 
   def app
     app = App.new
