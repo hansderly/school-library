@@ -1,5 +1,4 @@
-require_relative './nameable'
-require_relative './decorators'
+require_relative './decorators/decorators'
 
 class Person < Nameable
   attr_reader :id
@@ -32,3 +31,12 @@ class Person < Nameable
     @age >= 18
   end
 end
+
+p1 = Person.new(18, 'john hasdiufhudfshuihdfshn', parent_permission: true)
+p p1.correct_name
+base = BaseDecorator.new(p1)
+p base.correct_name
+capitalize = CapitalizeDecorator.new(base)
+p capitalize.correct_name
+trimmer = TrimmerDecorator.new(base)
+p trimmer.correct_name
