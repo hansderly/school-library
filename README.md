@@ -97,6 +97,11 @@ To run the project, execute the following command:
 -   Twitter: [@\_hansderly](https://twitter.com/_hansderly)
 -   LinkedIn: [ansderly-rameau](https://linkedin.com/in/ansderly-rameau/)
 
+👤 **Lucas Comamala Garcia**
+
+- GitHub: [@lucascomamala](https://github.com/lucascomamala)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/lucas-comamala/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
