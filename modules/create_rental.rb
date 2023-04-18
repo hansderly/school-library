@@ -1,3 +1,5 @@
+require 'date'
+
 module CreateRental
   def create_rental
     puts "\n"
@@ -10,7 +12,9 @@ module CreateRental
       puts 'Select a person from the following list by number (not id)'
       list_all_people
       person_position = gets.chomp.to_i
-      print 'Date (2023/04/13): '
+      current_time = DateTime.now
+      cdt = current_time.strftime '%d/%m/%Y %H:%M'
+      print "Date  #{cdt}: "
       date = gets.chomp
       new_rent = Rental.new(date, @books_list[book_position], @people_list[person_position])
       @rentals_list << new_rent
