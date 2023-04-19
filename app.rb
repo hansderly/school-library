@@ -21,8 +21,8 @@ class App
 
   def initialize
     @books_list = read_books
-    @people_list = []
-    @rentals_list = []
+    @people_list = read_people
+    @rentals_list = read_rentals
   end
 
   def actions_management(choice)
