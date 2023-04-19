@@ -7,3 +7,15 @@ module ReadData
     JSON.parse(File.read('./data/books.json'))
   end
 end
+
+def read_peoples
+  return [] unless File.exist?('../data/peoples.json') && !File.zero?('../data/peoples.json')
+
+  JSON.parse(File.read('./data/peoples.json'))
+end
+
+def read_rentals
+  return [] unless File.exist?('../data/rentals.json') && !File.zero?('../data/rentals.json')
+
+  JSON.parse(File.read('./data/rentals.json'))
+end
