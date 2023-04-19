@@ -5,7 +5,7 @@ module ListAllBooks
       puts 'The library is empty.'
     else
       @books_list.each_with_index do |value, index|
-        puts "#{index})  Title: #{value.title}, Author: #{value.author}"
+        puts "#{index})  Title: #{value['title']}, Author: #{value['author']}"
       end
     end
     puts "\n"

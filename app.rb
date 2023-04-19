@@ -8,6 +8,7 @@ require_relative './modules/list_all_rentals'
 require_relative './modules/create_person'
 require_relative './modules/create_book'
 require_relative './modules/create_rental'
+require_relative './data/read_data'
 
 class App
   include ListAllBooks
@@ -16,9 +17,10 @@ class App
   include CreateBook
   include CreateRental
   include ListAllRentals
+  include ReadData
 
   def initialize
-    @books_list = []
+    @books_list = read_books
     @people_list = []
     @rentals_list = []
   end
