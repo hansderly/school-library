@@ -1,4 +1,10 @@
 [
-	{ "title": "A Game of Thrones", "author": "George RR Martin" },
-	{ "title": "Aut", "author": "Test" }
+  {
+    "title": "A Game of Thrones",
+    "author": "George RR Martin"
+  },
+  {
+    "title": "The Grapes of Wrath",
+    "author": "John Steinbeck"
+  }
 ]

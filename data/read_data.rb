@@ -9,13 +9,13 @@ module ReadData
 end
 
 def read_people
-  return [] unless File.exist?('../data/peoples.json') && !File.zero?('../data/peoples.json')
+  return [] unless File.exist?('./data/people.json') && !File.zero?('./data/people.json')
 
-  JSON.parse(File.read('./data/peoples.json'))
+  JSON.parse(File.read('./data/people.json'))
 end
 
 def read_rentals
-  return [] unless File.exist?('../data/rentals.json') && !File.zero?('../data/rentals.json')
+  return [] unless File.exist?('./data/rentals.json') && !File.zero?('./data/rentals.json')
 
   JSON.parse(File.read('./data/rentals.json'))
 end
