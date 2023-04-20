@@ -11,10 +11,10 @@ module ListAllRentals
       @rentals_list.each do |value|
         next unless value['person'] == person_id
 
-        @books_list.each_with_index do |book, i|
+        @books_list.each do |book|
           next unless value['book'].to_i == book['id'].to_i
 
-          puts book
+          puts "Date: #{value['date']}, Book \"#{book['title']}\" by #{book['author']}"
         end
       end
 
