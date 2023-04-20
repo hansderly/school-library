@@ -5,7 +5,7 @@ module ListAllPeople
       puts 'The list is empty.'
     else
       @people_list.each_with_index do |value, index|
-        puts "#{index})  [#{value.class}] Name: #{value.name}, ID: #{value.id}, Age: #{value.age}"
+        puts "#{index})  [#{value['type']}] Name: #{value['name']}, ID: #{value['id']}, Age: #{value['age']}"
       end
     end
     puts "\n"

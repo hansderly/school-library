@@ -17,11 +17,13 @@ module CreatePerson
     age = gets.chomp
     print 'Name : '
     name = gets.chomp
-    print 'specialization : '
+    print 'Specialization : '
     specialization = gets.chomp
 
     new_teacher = Teacher.new(age, specialization, name)
-    @people_list << new_teacher
+    p new_teacher
+    @people_list << { 'type' => 'Teacher', 'id' => new_teacher.id, 'name' => new_teacher.name, 'age' => new_teacher.age,
+                      'specialization' => new_teacher.specialization }
     puts 'Teacher created successfully'
     puts "\n"
   end
@@ -37,10 +39,11 @@ module CreatePerson
     name = gets.chomp
     print 'Has parent permission? [Y/N] : '
     parent_permission = gets.chomp
-    permission = true
-    permission = false if parent_permission.upcase == 'N'
+    permission = parent_permission.upcase != 'N'
+
     new_student = Student.new(age, classroom, name, parent_permission: permission)
-    @people_list << new_student
+    @people_list << { 'type' => 'Student', 'id' => new_student.id, 'name' => new_student.name, 'age' => new_student.age,
+                      'classroom' => new_student.classroom, 'permission' => permission }
     puts 'Student created successfully'
     puts "\n"
   end

@@ -7,10 +7,19 @@ module ListAllRentals
       print 'ID of the person : '
       person_id = gets.chomp.to_i
       puts "Rentals:\n"
-      @rentals_list.each_with_index do |value, _index|
-        puts "Date: #{value.date}, Book \"#{value.book.title}\" by #{value.book.author}" if value.person.id == person_id
+
+      @rentals_list.each do |value|
+        next unless value['person'] == person_id
+
+        @books_list.each do |book|
+          next unless value['book'].to_i == book['id'].to_i
+
+          puts "Date: #{value['date']}, Book \"#{book['title']}\" by #{book['author']}"
+        end
       end
+
     end
+
     puts "\n"
   end
 end
