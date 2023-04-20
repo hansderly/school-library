@@ -19,13 +19,14 @@ module CreateRental
       print "Date  #{cdt}: "
       date = gets.chomp
 
-      
-
-      new_rent = Rental.new(date, chosen_book, chosen_person)
-      # @rentals_list << new_rent
-      @rentals_list << {"date" => new_rent.date, "book" => new_rent.book, "person" => new_rent.person}
-      puts 'Rental created successfully'
+      add_rental(date, chosen_book, chosen_person)
     end
     puts "\n"
+  end
+
+  def add_rental(date, chosen_book, chosen_person)
+    new_rent = Rental.new(date, chosen_book, chosen_person)
+    @rentals_list << { 'date' => new_rent.date, 'book' => new_rent.book, 'person' => new_rent.person }
+    puts 'Rental created successfully'
   end
 end
