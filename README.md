@@ -7,7 +7,6 @@
     -   [🛠 Built With ](#-built-with-)
         -   [Tech Stack ](#tech-stack-)
         -   [Key Features ](#key-features-)
-    -   [🚀 Live Demo ](#-live-demo-)
     -   [💻 Getting Started ](#-getting-started-)
         -   [Prerequisites](#prerequisites)
         -   [Setup](#setup)
@@ -45,10 +44,6 @@ School-Library is a Ruby-based project that employs object-oriented programming 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
--   [N/A]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -99,8 +94,8 @@ To run the project, execute the following command:
 
 👤 **Lucas Comamala Garcia**
 
-- GitHub: [@lucascomamala](https://github.com/lucascomamala)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/lucas-comamala/)
+-   GitHub: [@lucascomamala](https://github.com/lucascomamala)
+-   LinkedIn: [LinkedIn](https://www.linkedin.com/in/lucas-comamala/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
