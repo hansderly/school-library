@@ -6,7 +6,7 @@ describe Book do
     author = 'J.R.R. Tolkien'
     book = Book.new(title, author)
 
-    it "should be a valid book" do
+    it 'should be a valid book' do
       expect(book).to be_instance_of(Book)
     end
 
